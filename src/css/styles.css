@@ -1,0 +1,22 @@
+body{
+    background-color: #051D3B;
+}
+
+.cabecalho .container{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cabecalho .container .cabecalho-logo{
+    height: 50px;
+    width: 150px;
+    top: 12px;
+}
+
+.cabecalho .container .cabecalho-barra-pesquisa{
+    width: 752px;
+    height: 56px;
+}
