@@ -33,3 +33,25 @@ body{
     width: 125px;
     height: 68px;
 }
+
+.principal__menu {
+    display: flex;
+    flex-direction: column;
+    color: #f6f6f6;
+    padding-top: 2%;
+    padding-left: 44px;
+}
+
+.principal__menu__subtitulo{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.5em;
+}
+
+.principal__menu__link{
+    text-decoration: none;
+
+}
+
