@@ -1,22 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body{
     background-color: #051D3B;
 }
 
-.cabecalho .container{
-    margin-top: 0px;
+.cabecalho{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    gap: 10%;
 }
 
-.cabecalho .container .cabecalho-logo{
+.cabecalho__logo{
+    padding: 32px 0px 0px 32px;
+    width: 125px;
     height: 50px;
-    width: 150px;
-    top: 12px;
 }
 
-.cabecalho .container .cabecalho-barra-pesquisa{
-    width: 752px;
-    height: 56px;
+.cabecalho__pesquisa{
+    margin: 32px 0px 0px 32px;
+    width: 720px;
+    height: 45px;
+    border-radius: 7px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+    background-color: #FFFFFF29;
+    border-style: none;
+    color: #f6f6f6;
+}
+
+.cabecalho__perfil{
+    padding: 20px 10px 0px 0px;
+    width: 125px;
+    height: 68px;
 }
