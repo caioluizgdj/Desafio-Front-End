@@ -2,10 +2,15 @@
 
 :root{
     --fonte-principal: 'Inter', sans-serif;
+    --cor-principal: #f6f6f6;
 }
 
 body{
     background-color: #051D3B;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
 }
 
 .cabecalho{
@@ -24,12 +29,10 @@ body{
     width: 720px;
     height: 45px;
     border-radius: 7px;
-    font-family: var(--fonte-principal);
     font-size: 16px;
     padding-left: 15px;
     background-color: #FFFFFF29;
     border-style: none;
-    color: #f6f6f6;
 }
 
 .cabecalho__perfil{
@@ -38,29 +41,26 @@ body{
     height: 68px;
 }
 
+.principal{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .principal__menu {
-    color: #f6f6f6;
+    
     padding-top: 2%;
     padding-left: 44px;
-    
 }
 
 .principal__menu__subtitulo{
-    font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.4em;
 }
 
-.principal__menu__editor{
-    padding-top: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.principal__menu__comunidade{
+.principal__menu__section{
     padding-top: 15px;
     display: flex;
     align-items: center;
@@ -74,9 +74,55 @@ body{
 
 .principal__menu_link{
     text-decoration: none;
-    font-family: var(--fonte-principal);
-    color: #f6f6f6;
+    color: var(--cor-principal);
 }
 
+.principal__menu__direito{
+    padding-top: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+}
 
+.principal__menu__direito__input{
+    padding-left: 15px;
+    border-radius: 8px;
+    background-color: #FFFFFF29;
+    border-style: none;
+    width: 272px;
+    height: 56px;
+    margin-top: 15px;
+}
+
+.principal__menu__direito__inputMaior{
+    padding-left: 15px;
+    border-radius: 8px;
+    background-color: #FFFFFF29;
+    border-style: none;
+    width: 272px;
+    height: 80px;
+    margin-top: 15px;
+}
+
+.principal__menu__direito__personalizacao{
+    margin-top: 40px;
+}
+
+.principal__menu__direito__inputColor {
+    background-color: #141414;
+    border-radius: 10px;
+    width: 292px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.principal__menu__direito_button{
+    border: none;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #5081FB;
+    padding: 15px;
+    font-size: 16px;
+    color: #051D3B;
+}
 
