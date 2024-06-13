@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root{
+    --fonte-principal: 'Inter', sans-serif;
+}
+
 body{
     background-color: #051D3B;
 }
 
 .cabecalho{
     display: flex;
-    gap: 10%;
+    gap: 20%;
 }
 
 .cabecalho__logo{
     padding: 32px 0px 0px 32px;
-    width: 125px;
+    width: 145px;
     height: 50px;
 }
 
@@ -20,7 +24,7 @@ body{
     width: 720px;
     height: 45px;
     border-radius: 7px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 16px;
     padding-left: 15px;
     background-color: #FFFFFF29;
@@ -35,23 +39,44 @@ body{
 }
 
 .principal__menu {
-    display: flex;
-    flex-direction: column;
     color: #f6f6f6;
     padding-top: 2%;
     padding-left: 44px;
+    
 }
 
 .principal__menu__subtitulo{
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.5em;
 }
 
-.principal__menu__link{
-    text-decoration: none;
-
+.principal__menu__editor{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.principal__menu__comunidade{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.principal__menu_img{
+    height: 48px;
+    width: 48px;
+}
+
+.principal__menu_link{
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: #f6f6f6;
+}
+
+
 
