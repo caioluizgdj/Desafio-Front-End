@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
 
 :root{
     --fonte-principal: 'Inter', sans-serif;
@@ -33,6 +34,7 @@ body{
     padding-left: 15px;
     background-color: #FFFFFF29;
     border-style: none;
+    color: var(--cor-principal);
 }
 
 .cabecalho__perfil{
@@ -48,7 +50,6 @@ body{
 }
 
 .principal__menu {
-    
     padding-top: 2%;
     padding-left: 44px;
 }
@@ -77,6 +78,52 @@ body{
     color: var(--cor-principal);
 }
 
+.principal__code{
+    margin-top: 2%;
+    width: 50%;
+    background-color: #6BD1FF;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.principal__code__input{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--cor-principal);
+    background-color: #000000;
+    width: 100%;
+    border-radius: 16px;
+    outline: none;
+}
+
+.principal__code__bolinha__verde{
+    position: absolute;
+    left: 27%;
+    top: 22%;
+    width: 12px;
+    height: 12px;
+}
+
+.principal__code__bolinha__vermelha{
+    position: absolute;
+    left: 25%;
+    top: 22%;
+    width: 12px;
+    height: 12px;
+}
+
+.principal__code__bolinha__amarela{
+    position: absolute;
+    left: 26%;
+    top: 22%;
+    width: 12px;
+    height: 12px;
+}
+
 .principal__menu__direito{
     padding-top: 2%;
     margin-right: 2%;
@@ -85,6 +132,7 @@ body{
 }
 
 .principal__menu__direito__input{
+    color: var(--cor-principal);
     padding-left: 15px;
     border-radius: 8px;
     background-color: #FFFFFF29;
@@ -95,6 +143,7 @@ body{
 }
 
 .principal__menu__direito__inputMaior{
+    color: var(--cor-principal);
     padding-left: 15px;
     border-radius: 8px;
     background-color: #FFFFFF29;
@@ -125,4 +174,5 @@ body{
     font-size: 16px;
     color: #051D3B;
 }
+
 
