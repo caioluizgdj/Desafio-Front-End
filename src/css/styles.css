@@ -81,45 +81,69 @@ body{
 .principal__code{
     margin-top: 2%;
     width: 50%;
-    background-color: #6BD1FF;
     display: flex;
-    justify-content: center;
-    padding: 40px;
+    position: relative;
+}
+
+.principal__code__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: red;
     border-radius: 16px;
+    z-index: 1;
 }
 
 .principal__code__input{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-family: "Roboto Mono", monospace;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: var(--cor-principal);
     background-color: #000000;
-    width: 100%;
+    width: calc(100% - 50px);
+    padding: 40px;
     border-radius: 16px;
     outline: none;
+    z-index: 2;
+    resize: none;
+    box-sizing: border-box;
 }
 
-.principal__code__bolinha__verde{
+.principal__code__bolinha__verde,
+.principal__code__bolinha__vermelha,
+.principal__code__bolinha__amarela {
     position: absolute;
-    left: 27%;
-    top: 22%;
-    width: 12px;
-    height: 12px;
+    z-index: 3;
 }
+
 
 .principal__code__bolinha__vermelha{
     position: absolute;
-    left: 25%;
-    top: 22%;
+    left: 8%;
+    top: 12%;
     width: 12px;
     height: 12px;
 }
 
 .principal__code__bolinha__amarela{
     position: absolute;
-    left: 26%;
-    top: 22%;
+    left: 10%;
+    top: 12%;
+    width: 12px;
+    height: 12px;
+}
+
+.principal__code__bolinha__verde{
+    position: absolute;
+    left: 12%;
+    top: 12%;
     width: 12px;
     height: 12px;
 }
@@ -154,7 +178,7 @@ body{
 }
 
 .principal__menu__direito__personalizacao{
-    margin-top: 40px;
+    margin-top: 30%;
 }
 
 .principal__menu__direito__inputColor {
