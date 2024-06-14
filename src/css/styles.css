@@ -195,6 +195,28 @@ body{
     margin-top: 25%;
 }
 
+.principal__menu__direito__personalizacao select,
+.principal__menu__direito__personalizacao input {
+    display: block;
+    margin-top: 15px;
+}
+
+.principal__menu__direito__select{
+    color: var(--cor-principal);
+    padding-left: 15px;
+    border-radius: 8px;
+    background-color: #FFFFFF29;
+    border-style: none;
+    width: 292px;
+    height: 56px;
+    font-size: 16px;
+    outline: none;
+}
+
+.principal__menu__direito__select option{ 
+    background-color: #051D3B;
+}
+
 .principal__menu__direito__inputColor {
     background-color: #141414;
     border-radius: 10px;
